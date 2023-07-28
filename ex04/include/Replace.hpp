@@ -6,7 +6,7 @@
 /*   By: jgoldste <jgoldste@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 23:17:58 by jgoldste          #+#    #+#             */
-/*   Updated: 2023/07/29 02:27:46 by jgoldste         ###   ########.fr       */
+/*   Updated: 2023/07/29 03:00:41 by jgoldste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ class Replace {
 	private:
 		std::ifstream	_input_file;
 		std::ofstream	_output_file;
-		std::string		_file_content;
 		std::string		_input_file_name;
 		std::string		_output_file_name;
+		std::string		_file_content;
 		std::string		_s1;
 		std::string		_s2;
 		size_t			_s1_length;
