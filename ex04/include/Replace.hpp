@@ -6,7 +6,7 @@
 /*   By: jgoldste <jgoldste@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 23:17:58 by jgoldste          #+#    #+#             */
-/*   Updated: 2023/07/28 17:29:31 by jgoldste         ###   ########.fr       */
+/*   Updated: 2023/07/29 02:27:46 by jgoldste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,30 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+
+class Replace {
+	private:
+		std::ifstream	_input_file;
+		std::ofstream	_output_file;
+		std::string		_file_content;
+		std::string		_input_file_name;
+		std::string		_output_file_name;
+		std::string		_s1;
+		std::string		_s2;
+		size_t			_s1_length;
+		size_t			_s2_length;
+
+	public:
+		Replace();
+		Replace(std::string input_file_name, std::string s1, std::string s2);
+		~Replace();
+
+		bool	openInputFile();
+		bool	openOutputFile();
+		void	doReplace();
+		void	closeInputOutputFiles();
+};
+
+bool	checkArgc(int argc);
 
 #endif
