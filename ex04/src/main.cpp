@@ -6,7 +6,7 @@
 /*   By: jgoldste <jgoldste@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 23:18:46 by jgoldste          #+#    #+#             */
-/*   Updated: 2023/07/29 02:30:09 by jgoldste         ###   ########.fr       */
+/*   Updated: 2023/07/29 03:23:33 by jgoldste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,9 @@ bool	checkArgc(int argc) {
 
 int	main(int argc, char** argv) {
 	if (checkArgc(argc) == false)
-		return 1;
+		return 0;
 	Replace strReplace(argv[1], argv[2], argv[3]);
-	if (strReplace.openInputFile() == false)
-		return 1;
-	if (strReplace.openOutputFile() == false)
-		return 1;
 	strReplace.doReplace();
-	strReplace.closeInputOutputFiles();
 	return 0;
 }
 

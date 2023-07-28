@@ -6,7 +6,7 @@
 /*   By: jgoldste <jgoldste@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 23:17:58 by jgoldste          #+#    #+#             */
-/*   Updated: 2023/07/29 03:00:41 by jgoldste         ###   ########.fr       */
+/*   Updated: 2023/07/29 03:15:57 by jgoldste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,15 +37,15 @@ class Replace {
 		size_t			_s1_length;
 		size_t			_s2_length;
 
+		bool	_openInputFile();
+		bool	_openOutputFile();
+		void	_closeInputOutputFiles();
 	public:
 		Replace();
 		Replace(std::string input_file_name, std::string s1, std::string s2);
 		~Replace();
 
-		bool	openInputFile();
-		bool	openOutputFile();
 		void	doReplace();
-		void	closeInputOutputFiles();
 };
 
 bool	checkArgc(int argc);
