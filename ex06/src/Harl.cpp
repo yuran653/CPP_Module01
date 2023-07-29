@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jgoldste <jgoldste@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/29 16:57:43 by jgoldste          #+#    #+#             */
-/*   Updated: 2023/07/29 23:26:46 by jgoldste         ###   ########.fr       */
+/*   Created: 2023/07/29 21:25:07 by jgoldste          #+#    #+#             */
+/*   Updated: 2023/07/29 21:25:18 by jgoldste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,14 @@ void	Harl::_error(void) {
 }
 
 void	Harl::complain(std::string level) {
-	std::string levels[ARRAY_SIZE] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	void (Harl::*functinon[ARRAY_SIZE])(void) = {
+	std::string levels[ARRAY_FUNC_SIZE] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	void (Harl::*functinon[ARRAY_FUNC_SIZE])(void) = {
 		&Harl::_debug,
 		&Harl::_info,
 		&Harl::_warning,
 		&Harl::_error
 	};
-	for (int i = 0; i < ARRAY_SIZE; i++) {
+	for (int i = 0; i < ARRAY_FUNC_SIZE; i++) {
 		if (levels[i].compare(level) == 0) {
 			(this->*functinon[i])();
 			return;
