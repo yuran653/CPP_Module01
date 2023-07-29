@@ -6,7 +6,7 @@
 /*   By: jgoldste <jgoldste@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/29 16:48:19 by jgoldste          #+#    #+#             */
-/*   Updated: 2023/07/29 23:26:33 by jgoldste         ###   ########.fr       */
+/*   Updated: 2023/07/29 23:57:49 by jgoldste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,10 @@ been coming for years whereas you started working here since last month."
 #define NO_HAVE_MSG "Harl's vocabulary contains only four phrases; thus, it is\
 beyond his ability to give any comments!"
 #define ARRAY_SIZE 4
+#define LVL_ONE "DEBUG"
+#define LVL_TWO "INFO"
+#define LVL_THREE "WARNING"
+#define LVL_FOUR "ERROR"
 
 #include <iostream>
 #include <string>

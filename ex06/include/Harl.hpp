@@ -6,7 +6,7 @@
 /*   By: jgoldste <jgoldste@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/29 21:24:40 by jgoldste          #+#    #+#             */
-/*   Updated: 2023/07/29 23:26:21 by jgoldste         ###   ########.fr       */
+/*   Updated: 2023/07/29 23:57:30 by jgoldste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,10 @@ been coming for years whereas you started working here since last month."
 #define ERROR_MSG "This is unacceptable! I want to speak to the manager now."
 #define NO_HAVE_MSG "[ Probably complaining about insignificant problems ]"
 #define ARRAY_SIZE 4
+#define LVL_ONE "DEBUG"
+#define LVL_TWO "INFO"
+#define LVL_THREE "WARNING"
+#define LVL_FOUR "ERROR"
 
 #include <iostream>
 #include <string>
